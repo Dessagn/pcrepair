@@ -1,0 +1,38 @@
+[
+    {
+        "name": "Basic Service",
+        "description": "Basic service includes services that does not take more a 2 hours to do. This service includes: ",
+        "includes": [
+            "Virus and spyware removal",
+            "Basic software installations",
+            "Reloading like operating system, drivers and plugins",
+            "Does not include data backup and restore"
+        ],
+        "price": "30€"
+    },
+    {
+        "name": "Standard Services",
+        "description": "Restoring data from a backup that is maintained on another divice and related services: ",
+        "includes": [
+            "Include all basic services plus,",
+            "Backup from to/from remote drive",
+            "Seting up new backup accounts",
+            "Installing new softwares and debugging programs that are not working properly",
+            "Does not include reconfiguring the PC"
+        ],
+        "price": "50€"
+    },
+    {
+        "name": "Full Service and Configuration",
+        "description": "Incuding all the Basic services and the Standard services, initial PC setup, software configuration and advanced cloud backup : ",
+        "includes": [
+            "Seting up initial configuration including operating systems and aother softwares",
+            "Complete cleanup and reinstalling everything",
+            "Restoring all data to original state and setting up backup",
+            "Installing new anti-viruses, spywares and performance testing",
+            "Include bonus services like setting up printers, projectors and WiFi configurations"
+        ],
+        "price": "80€"
+    }
+
+]

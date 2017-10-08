@@ -1,0 +1,19 @@
+extends layout
+
+block content
+  h1.center.title= header
+  .container
+    .row
+      each service, i in services
+        .col-md-4
+          .well.highlight
+              h2.center #{service.name}
+              p
+              | #{service.description}
+              ul
+                each val in service.includes
+                  li= val
+                hr
+              h3 Price: #{service.price}
+                button.btn.btn-primary.right Select
+

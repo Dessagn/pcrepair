@@ -1,0 +1,34 @@
+extends layout
+
+block content
+  .container
+    h1= header
+    p Welcome to #{header}
+    
+
+    form#contactForm.form-horizontal(action='about/send', method='post')
+      .form-group
+        label.col-xs-3.control-label Full name
+        .col-xs-4
+          input.form-control(type='text', name='firstName', placeholder='First name')
+        .col-xs-4
+          input.form-control(type='text', name='lastName', placeholder='Last name')
+      .form-group
+        label.col-xs-3.control-label Phone number
+        .col-xs-5
+          input.form-control(type='text', name='phoneNumber')
+      .form-group
+        label.col-xs-3.control-label Email address
+        .col-xs-5
+          input.form-control(type='text', name='email')
+      .form-group
+        label.col-xs-3.control-label Message
+        .col-xs-9
+          textarea.form-control(name='message', rows='7')
+      .form-group
+        label#captchaOperation.col-xs-3.control-label
+        .col-xs-3
+          input.form-control(type='text', name='captcha')
+      .form-group
+        .col-xs-9.col-xs-offset-3
+          button.btn.btn-primary(type='submit') Submit
